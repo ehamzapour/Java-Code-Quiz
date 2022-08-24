@@ -1,0 +1,28 @@
+*:root {
+    text-align: center;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.933);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.30), 0 6px 6px rgba(0.,0,0,0.23);
+}
+
+.answers {
+    background: rgb(253, 0, 0);
+    width: 90%;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#btn-start {
+    border:none;
+        padding: 6px 0 6px 0;
+        border-radius: 8px;
+        background:#400070;
+}
+
+#code-title {
+    text-align: center;
+    font-weight: bold;
+}
