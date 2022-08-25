@@ -6,13 +6,14 @@ var timer = document.getElementById("timer");
 var information = document.getElementById("information");
 var btnStart = document.getElementById("btn-start");
 var finalScore = document.getElementById("score");
-var btnScore = document.getElementById("btnscore");
-var index = 0;
+var btnScore = document.getElementById("btnScore");
+var currentindex = 0;
 var score = 0;
-var count = 75;
+var count = 60;
 var alert = document.getElementById("alert");
 var otherScores = [];
 var savedScores = JSON.parse(localStorage.getItem("userData"));
+
 
 
 var questions = [
@@ -45,18 +46,19 @@ var questions = [
 
 var otherQuestions
 
-btnStart.addEventListener("click", startQuiz );
-function startQuiz(){
+btnStart.addEventListener("click", starQuiz );
+function starQuiz(){
     if(savedScores !==null) {
         otherScores = savedScores;
     }
     information.classList.add("d-none")
     btnStart.classList.add("d-none")
     counter.classList.remove("d-none")
-    otherquestions = questions[currentindex]
+    quizQuestions.classList.remove("d-none")
+    otherQuestions = questions[currentindex]
     console.log(otherQuestions.title)
 
-    displayQuestion(otherquestions)
+    displayQuestion(otherQuestions)
     gametime()
 }
 
@@ -69,8 +71,8 @@ btnScore.addEventListener("click", function(){
 function gametime(){
     var timeinterval = setInterval(function(){
         timer.innerText = count
-        count--;
-    }, 1000);
+         count--;
+        }, 1000);
 }
 
 function scorePage(a, b) {
@@ -92,7 +94,6 @@ function displayQuestion(question){
     button.innerText=element
     answers.appendChild(button)
     button.addEventListener("click", displaynextQuestion)
-
     });
 }
 
@@ -109,8 +110,8 @@ function displaynextQuestion(e){
             displayQuestion(otherQuestions)
         }
     }else {
-        console.log("finalgame")
-        finalgame()
+        console.log("endgame")
+        endgame()
     }
 }
 
@@ -126,7 +127,7 @@ function correction(response){
     }
     setTimeout(function(){
         alert.innerText=""
-    }, 1000);
+         }, 1000);
 }
 
 function endgame(){
