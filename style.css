@@ -1,18 +1,18 @@
-*:root {
+body,html {
     text-align: center;
 }
 
 .box {
     background: rgba(255, 255, 255, 0.933);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.30), 0 6px 6px rgba(0.,0,0,0.23);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.898), 0 6px 6px rgba(0.,0,0,0.23);
 }
 
 .answers {
-    background: rgb(253, 0, 0);
+    background: rgb(0, 0, 0);
     width: 90%;
     display: inline-block;
     border-radius: 8px;
-    padding: 5px;
+    padding: 3px;
 }
 
 #btn-start {
@@ -20,6 +20,8 @@
         padding: 6px 0 6px 0;
         border-radius: 8px;
         background:#400070;
+    font:bold 40px;
+        color:#fff;
 }
 
 #code-title {
