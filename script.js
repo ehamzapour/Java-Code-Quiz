@@ -20,17 +20,17 @@ var questions = [
     {
         title: "Commonly used data types DO Not Include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
-        answer: "alters"
+        answer: "alerts"
     },
     {
         title: "The condition in an if/else statement is enclosed within:",
         choices: ["quotes", "curly brackets", "paranthesis", "square brackets"],
-        answer: "alters"
+        answer: "paranthesis"
     },
     {
         title: "Arrays in Javascript can be used to store ______.",
         choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-        answer: "paranthesis"
+        answer: "all of the above"
     },
     {
         title: "String values must be enclosed within _____ when being assigned to variables.",
