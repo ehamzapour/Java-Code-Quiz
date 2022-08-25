@@ -24,6 +24,15 @@ body,html {
         color:#fff;
 }
 
+#score {
+    padding: 10px;
+}
+
+#btnScore {
+    padding: 15px;
+    margin: 20px;
+}
+
 #code-title {
     text-align: center;
     font-weight: bold;
